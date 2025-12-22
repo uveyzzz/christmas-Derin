@@ -164,14 +164,38 @@ section {
     padding: 80px 40px;
 }
 
+.details-content-wrapper {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .info-box {
+    flex: 0 0 400px;
     background: none;
     border: none;
     border-radius: 0;
     padding: 0;
-    max-width: 100%;
-    margin: 0 auto;
+    margin: 0;
     backdrop-filter: none;
+}
+
+.details-message {
+    flex: 1;
+    min-width: 300px;
+}
+
+.details-message p {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.2rem;
+    color: #FFFAF2;
+    line-height: 1.8;
+    letter-spacing: 1px;
+    font-weight: 400;
+    text-transform: none;
 }
 
 .info-title {
@@ -220,19 +244,9 @@ section {
     padding: 80px 40px;
 }
 
-.maps-content-wrapper {
-    display: flex;
-    gap: 40px;
-    align-items: center;
-    justify-content: center;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
 .maps-container {
-    flex: 0 0 400px;
-    width: 400px;
-    height: 400px;
+    max-width: 900px;
+    margin: 0 auto;
     border-radius: 15px;
     overflow: hidden;
     border: 2px solid #FFFAF2;
@@ -243,20 +257,6 @@ section {
     display: block;
     width: 100%;
     height: 100%;
-}
-
-.maps-message {
-    flex: 1;
-    min-width: 300px;
-}
-
-.maps-message p {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 1.2rem;
-    color: #FFFAF2;
-    line-height: 1.8;
-    letter-spacing: 1px;
-    font-weight: 400;
 }
 
 /* RESPONSIVE DESIGN */
@@ -274,23 +274,21 @@ section {
         padding: 60px 20px;
     }
 
-    .countdown-timer {
-        gap: 15px;
-    }
-
-    .maps-content-wrapper {
+    .details-content-wrapper {
         flex-direction: column;
         gap: 30px;
     }
 
-    .maps-container {
-        flex: 0 0 300px;
-        width: 300px;
-        height: 300px;
+    .info-box {
+        flex: 0 0 auto;
     }
 
-    .maps-message p {
+    .details-message p {
         font-size: 1rem;
+    }
+
+    .countdown-timer {
+        gap: 15px;
     }
 
     .countdown-item {
@@ -300,10 +298,6 @@ section {
 
     .countdown-number {
         font-size: 2.2em;
-    }
-
-    .info-box {
-        padding: 30px 25px;
     }
 
     .arrow {
@@ -342,13 +336,7 @@ section {
         font-size: 0.75em;
     }
 
-    .maps-container {
-        flex: 0 0 250px;
-        width: 250px;
-        height: 250px;
-    }
-
-    .maps-message p {
+    .details-message p {
         font-size: 0.9rem;
         line-height: 1.6;
     }
