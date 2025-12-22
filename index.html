@@ -77,36 +77,51 @@
             </svg>
         </div>
 
-        <!-- Date Section (Prominent) -->
-        <div class="date-section">
-            <div class="date-display">
-                <div class="date-number" id="countdown-date">DEC 25</div>
-                <div class="date-day">WEDNESDAY</div>
+        <!-- COUNTDOWN TIMER SECTION -->
+        <div class="countdown-section">
+            <h2 class="countdown-title">Event Countdown</h2>
+            <div class="countdown-timer">
+                <div class="countdown-item">
+                    <span class="countdown-number" id="days">00</span>
+                    <span class="countdown-label">Days</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="hours">00</span>
+                    <span class="countdown-label">Hours</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="minutes">00</span>
+                    <span class="countdown-label">Minutes</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="seconds">00</span>
+                    <span class="countdown-label">Seconds</span>
+                </div>
             </div>
         </div>
 
-        <!-- Countdown Timer (compact) -->
-        <div class="countdown-compact">
-            <span id="days">00</span>d 
-            <span id="hours">00</span>h 
-            <span id="minutes">00</span>m 
-            <span id="seconds">00</span>s
+        <!-- INFORMATION BOX SECTION -->
+        <div class="info-box">
+            <h3 class="info-title">Event Details</h3>
+            <div class="info-content">
+                <p class="info-item">
+                    <span class="info-label">Date & Time:</span>
+                    <span class="info-value" id="event-date">December 25, 2025 at 6:00 PM</span>
+                </p>
+                <p class="info-item">
+                    <span class="info-label">Location:</span>
+                    <span class="info-value">My Cozy Terrace</span>
+                </p>
+                <p class="info-item">
+                    <span class="info-label">Dress Code:</span>
+                    <span class="info-value">Stay Warm</span>
+                </p>
+            </div>
         </div>
 
-        <!-- Event Details -->
-        <div class="event-details">
-            <div class="detail-line">
-                <span class="detail-label">DRESS CODE</span>
-                <span class="detail-value">STAY WARM</span>
-            </div>
-            <div class="detail-line">
-                <span class="detail-label">LOCATION</span>
-                <span class="detail-value" id="event-location">MY COZY TERRACE</span>
-            </div>
-        </div>
-
-        <!-- Google Maps (optional, hidden by default) -->
-        <div class="maps-section" style="display: none;">
+        <!-- GOOGLE MAPS SECTION -->
+        <div class="maps-section">
+            <h3 class="maps-title">Location Map</h3>
             <div class="maps-container">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.1234567890!2d-74.0060!3d40.7128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a27aad00001%3A0x89c25a27aad00001!2sNew%20York%2C%20NY%2010001!5e0!3m2!1sen!2sus!4v1234567890" 
                         width="100%" 
