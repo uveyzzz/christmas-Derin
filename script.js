@@ -2,7 +2,7 @@
 // COUNTDOWN TIMER CONFIGURATION
 // ======================================
 // UPDATE THESE VALUES WITH YOUR EVENT DATE AND TIME
-const EVENT_DATE = new Date("December 25, 2025 6:00:00 PM").getTime();
+const EVENT_DATE = new Date("December 26, 2025 5:00:00 PM").getTime();
 
 // Optional: Update the display date in the info box
 function updateEventDateDisplay() {
