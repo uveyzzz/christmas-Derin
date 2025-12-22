@@ -3,41 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Countdown Event</title>
+    <title>Christmas Countdown</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Background Video -->
     <video class="background-video" autoplay muted loop>
-        <source src="your-video.mp4" type="video/mp4">
+        <source src="https://videos.pexels.com/video-files/3195380/3195380-sd_640_360_25fps.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
 
     <!-- Video Overlay -->
     <div class="video-overlay"></div>
 
+    <!-- Floating snowflakes -->
+    <div class="snowflakes">
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❆</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake">❆</div>
+        <div class="snowflake">❄</div>
+        <div class="snowflake">❅</div>
+    </div>
+
     <!-- Main Content Container -->
     <div class="container">
         <div class="content-wrapper">
+            <!-- Decorative top accent -->
+            <div class="accent-top"></div>
+
             <!-- Header -->
-            <h1 class="main-title">Upcoming Event</h1>
+            <div class="header-section">
+                <h1 class="main-title">Christmas Countdown</h1>
+                <p class="subtitle">The Most Wonderful Time of the Year</p>
+            </div>
 
             <!-- Countdown Timer -->
             <div class="countdown-section">
-                <h2>Event Countdown</h2>
                 <div class="countdown-timer">
                     <div class="countdown-item">
                         <span class="countdown-number" id="days">00</span>
                         <span class="countdown-label">Days</span>
                     </div>
+                    <div class="countdown-divider">:</div>
                     <div class="countdown-item">
                         <span class="countdown-number" id="hours">00</span>
                         <span class="countdown-label">Hours</span>
                     </div>
+                    <div class="countdown-divider">:</div>
                     <div class="countdown-item">
                         <span class="countdown-number" id="minutes">00</span>
                         <span class="countdown-label">Minutes</span>
                     </div>
+                    <div class="countdown-divider">:</div>
                     <div class="countdown-item">
                         <span class="countdown-number" id="seconds">00</span>
                         <span class="countdown-label">Seconds</span>
@@ -47,28 +70,34 @@
 
             <!-- Information Box -->
             <div class="info-box">
-                <h2>Event Details</h2>
-                <p><strong>Date & Time:</strong> <span id="event-date">December 25, 2025 at 6:00 PM</span></p>
-                <p><strong>Location:</strong> Venue Name, City</p>
-                <p><strong>Description:</strong> Join us for an amazing celebration and create unforgettable memories!</p>
-                <button class="cta-button">Learn More</button>
+                <div class="info-content">
+                    <div class="info-icon">🎄</div>
+                    <h2>Event Details</h2>
+                    <div class="info-details">
+                        <p><strong>When:</strong> <span id="event-date">December 25, 2025 at 6:00 PM</span></p>
+                        <p><strong>Location:</strong> Venue Name, City</p>
+                        <p class="description">Join us for the most magical celebration of the season. Share in the warmth, joy, and festive spirit with loved ones.</p>
+                    </div>
+                </div>
             </div>
 
             <!-- Google Maps Location -->
             <div class="maps-section">
-                <h2>Location Map</h2>
+                <h3>Find Us</h3>
                 <div class="maps-container">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.1234567890!2d-74.0060!3d40.7128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a27aad00001%3A0x89c25a27aad00001!2sNew%20York%2C%20NY%2010001!5e0!3m2!1sen!2sus!4v1234567890" 
                             width="100%" 
-                            height="400" 
+                            height="300" 
                             style="border:0;" 
                             allowfullscreen="" 
                             loading="lazy" 
                             referrerpolicy="no-referrer-when-downgrade">
                     </iframe>
                 </div>
-                <p class="map-note">Click on the map to get directions</p>
             </div>
+
+            <!-- Decorative bottom accent -->
+            <div class="accent-bottom"></div>
         </div>
     </div>
 
