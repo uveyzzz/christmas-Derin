@@ -70,6 +70,15 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Update countdown every second
     countdownInterval = setInterval(updateCountdown, 1000);
+    
+    // Ensure smooth video looping
+    const heroVideo = document.querySelector('.hero-video');
+    if (heroVideo) {
+        heroVideo.addEventListener('ended', function() {
+            this.currentTime = 0;
+            this.play();
+        });
+    }
 });
 
 // ======================================
