@@ -3,101 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Christmas Countdown</title>
+    <title>Winter Soirée - Christmas Countdown</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700;800&family=Montserrat:wght@100;300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Background Video -->
-    <video class="background-video" autoplay muted loop>
-        <source src="https://videos.pexels.com/video-files/3195380/3195380-sd_640_360_25fps.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-
-    <!-- Video Overlay -->
-    <div class="video-overlay"></div>
-
-    <!-- Floating snowflakes -->
-    <div class="snowflakes">
-        <div class="snowflake">❅</div>
-        <div class="snowflake">❅</div>
-        <div class="snowflake">❆</div>
-        <div class="snowflake">❄</div>
-        <div class="snowflake">❅</div>
-        <div class="snowflake">❆</div>
-        <div class="snowflake">❄</div>
-        <div class="snowflake">❅</div>
-    </div>
-
-    <!-- Main Content Container -->
     <div class="container">
-        <div class="content-wrapper">
-            <!-- Decorative top accent -->
-            <div class="accent-top"></div>
+        <!-- Title -->
+        <h1 class="main-title">Winter Soirée</h1>
 
-            <!-- Header -->
-            <div class="header-section">
-                <h1 class="main-title">Christmas Countdown</h1>
-                <p class="subtitle">The Most Wonderful Time of the Year</p>
+        <!-- Line Art Illustration -->
+        <div class="illustration">
+            <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                <!-- Ground line -->
+                <line x1="0" y1="280" x2="400" y2="280" stroke="white" stroke-width="1.5"/>
+                
+                <!-- Left person (standing, drinking) -->
+                <circle cx="60" cy="180" r="15" stroke="white" stroke-width="1.5" fill="none"/>
+                <line x1="60" y1="195" x2="60" y2="240" stroke="white" stroke-width="1.5"/>
+                <line x1="60" y1="200" x2="35" y2="215" stroke="white" stroke-width="1.5"/>
+                <line x1="60" y1="200" x2="85" y2="220" stroke="white" stroke-width="1.5"/>
+                <line x1="60" y1="240" x2="45" y2="275" stroke="white" stroke-width="1.5"/>
+                <line x1="60" y1="240" x2="75" y2="278" stroke="white" stroke-width="1.5"/>
+                <!-- Cup in hand -->
+                <circle cx="95" cy="185" r="12" stroke="white" stroke-width="1.5" fill="none"/>
+                <line x1="107" y1="185" x2="110" y2="185" stroke="white" stroke-width="1.5"/>
+                
+                <!-- Center-left person -->
+                <circle cx="140" cy="175" r="14" stroke="white" stroke-width="1.5" fill="none"/>
+                <line x1="140" y1="189" x2="140" y2="240" stroke="white" stroke-width="1.5"/>
+                <line x1="140" y1="195" x2="115" y2="210" stroke="white" stroke-width="1.5"/>
+                <line x1="140" y1="195" x2="165" y2="215" stroke="white" stroke-width="1.5"/>
+                <line x1="140" y1="240" x2="125" y2="278" stroke="white" stroke-width="1.5"/>
+                <line x1="140" y1="240" x2="155" y2="276" stroke="white" stroke-width="1.5"/>
+                
+                <!-- Center person (taller) -->
+                <circle cx="200" cy="160" r="15" stroke="white" stroke-width="1.5" fill="none"/>
+                <line x1="200" y1="175" x2="200" y2="245" stroke="white" stroke-width="1.5"/>
+                <line x1="200" y1="185" x2="170" y2="205" stroke="white" stroke-width="1.5"/>
+                <line x1="200" y1="185" x2="230" y2="205" stroke="white" stroke-width="1.5"/>
+                <line x1="200" y1="245" x2="180" y2="278" stroke="white" stroke-width="1.5"/>
+                <line x1="200" y1="245" x2="220" y2="278" stroke="white" stroke-width="1.5"/>
+                
+                <!-- Center-right person -->
+                <circle cx="260" cy="178" r="14" stroke="white" stroke-width="1.5" fill="none"/>
+                <line x1="260" y1="192" x2="260" y2="242" stroke="white" stroke-width="1.5"/>
+                <line x1="260" y1="198" x2="235" y2="218" stroke="white" stroke-width="1.5"/>
+                <line x1="260" y1="198" x2="285" y2="215" stroke="white" stroke-width="1.5"/>
+                <line x1="260" y1="242" x2="242" y2="278" stroke="white" stroke-width="1.5"/>
+                <line x1="260" y1="242" x2="278" y2="276" stroke="white" stroke-width="1.5"/>
+                
+                <!-- Right person (standing, holding glass) -->
+                <circle cx="330" cy="182" r="15" stroke="white" stroke-width="1.5" fill="none"/>
+                <line x1="330" y1="197" x2="330" y2="240" stroke="white" stroke-width="1.5"/>
+                <line x1="330" y1="202" x2="305" y2="220" stroke="white" stroke-width="1.5"/>
+                <line x1="330" y1="202" x2="355" y2="215" stroke="white" stroke-width="1.5"/>
+                <line x1="330" y1="240" x2="312" y2="278" stroke="white" stroke-width="1.5"/>
+                <line x1="330" y1="240" x2="348" y2="276" stroke="white" stroke-width="1.5"/>
+                <!-- Glass -->
+                <path d="M 355 175 L 365 195 L 360 200 L 350 180 Z" stroke="white" stroke-width="1.5" fill="none"/>
+                
+                <!-- Table on right side -->
+                <line x1="280" y1="220" x2="380" y2="220" stroke="white" stroke-width="2"/>
+                <line x1="285" y1="220" x2="285" y2="260" stroke="white" stroke-width="1.5"/>
+                <line x1="370" y1="220" x2="370" y2="260" stroke="white" stroke-width="1.5"/>
+                <!-- Items on table (bottle, glasses, plate) -->
+                <path d="M 310 210 L 310 200 L 315 200 L 315 210" stroke="white" stroke-width="1.5" fill="none"/>
+                <circle cx="325" cy="215" r="5" stroke="white" stroke-width="1.5" fill="none"/>
+                <circle cx="340" cy="215" r="5" stroke="white" stroke-width="1.5" fill="none"/>
+                <ellipse cx="355" cy="220" rx="8" ry="4" stroke="white" stroke-width="1.5" fill="none"/>
+            </svg>
+        </div>
+
+        <!-- Date Section (Prominent) -->
+        <div class="date-section">
+            <div class="date-display">
+                <div class="date-number" id="countdown-date">DEC 25</div>
+                <div class="date-day">WEDNESDAY</div>
             </div>
+        </div>
 
-            <!-- Countdown Timer -->
-            <div class="countdown-section">
-                <div class="countdown-timer">
-                    <div class="countdown-item">
-                        <span class="countdown-number" id="days">00</span>
-                        <span class="countdown-label">Days</span>
-                    </div>
-                    <div class="countdown-divider">:</div>
-                    <div class="countdown-item">
-                        <span class="countdown-number" id="hours">00</span>
-                        <span class="countdown-label">Hours</span>
-                    </div>
-                    <div class="countdown-divider">:</div>
-                    <div class="countdown-item">
-                        <span class="countdown-number" id="minutes">00</span>
-                        <span class="countdown-label">Minutes</span>
-                    </div>
-                    <div class="countdown-divider">:</div>
-                    <div class="countdown-item">
-                        <span class="countdown-number" id="seconds">00</span>
-                        <span class="countdown-label">Seconds</span>
-                    </div>
-                </div>
+        <!-- Countdown Timer (compact) -->
+        <div class="countdown-compact">
+            <span id="days">00</span>d 
+            <span id="hours">00</span>h 
+            <span id="minutes">00</span>m 
+            <span id="seconds">00</span>s
+        </div>
+
+        <!-- Event Details -->
+        <div class="event-details">
+            <div class="detail-line">
+                <span class="detail-label">DRESS CODE</span>
+                <span class="detail-value">STAY WARM</span>
             </div>
-
-            <!-- Information Box -->
-            <div class="info-box">
-                <div class="info-content">
-                    <div class="info-icon">🎄</div>
-                    <h2>Event Details</h2>
-                    <div class="info-details">
-                        <p><strong>When:</strong> <span id="event-date">December 25, 2025 at 6:00 PM</span></p>
-                        <p><strong>Location:</strong> Venue Name, City</p>
-                        <p class="description">Join us for the most magical celebration of the season. Share in the warmth, joy, and festive spirit with loved ones.</p>
-                    </div>
-                </div>
+            <div class="detail-line">
+                <span class="detail-label">LOCATION</span>
+                <span class="detail-value" id="event-location">MY COZY TERRACE</span>
             </div>
+        </div>
 
-            <!-- Google Maps Location -->
-            <div class="maps-section">
-                <h3>Find Us</h3>
-                <div class="maps-container">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.1234567890!2d-74.0060!3d40.7128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a27aad00001%3A0x89c25a27aad00001!2sNew%20York%2C%20NY%2010001!5e0!3m2!1sen!2sus!4v1234567890" 
-                            width="100%" 
-                            height="300" 
-                            style="border:0;" 
-                            allowfullscreen="" 
-                            loading="lazy" 
-                            referrerpolicy="no-referrer-when-downgrade">
+        <!-- Google Maps (optional, hidden by default) -->
+        <div class="maps-section" style="display: none;">
+            <div class="maps-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.1234567890!2d-74.0060!3d40.7128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a27aad00001%3A0x89c25a27aad00001!2sNew%20York%2C%20NY%2010001!5e0!3m2!1sen!2sus!4v1234567890" 
+                        width="100%" 
+                        height="300" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
                     </iframe>
-                </div>
             </div>
-
-            <!-- Decorative bottom accent -->
-            <div class="accent-bottom"></div>
         </div>
     </div>
 
