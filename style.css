@@ -33,6 +33,7 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center;
     transform: translate(-50%, -50%);
     z-index: 1;
     will-change: transform;
@@ -169,10 +170,11 @@ section {
 .details-content-wrapper {
     display: flex;
     gap: 40px;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     max-width: 1200px;
     margin: 0 auto;
+    width: 100%;
 }
 
 .info-box {
@@ -181,13 +183,17 @@ section {
     border: none;
     border-radius: 0;
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
     backdrop-filter: none;
+    text-align: center;
 }
 
 .details-message {
     flex: 1;
     min-width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .details-message p {
@@ -280,10 +286,12 @@ section {
     .details-content-wrapper {
         flex-direction: column;
         gap: 30px;
+        align-items: center;
     }
 
     .info-box {
         flex: 0 0 auto;
+        width: 100%;
     }
 
     .details-message p {
@@ -313,6 +321,11 @@ section {
 }
 
 @media (max-width: 480px) {
+    .hero-video {
+        object-fit: contain;
+        background: rgba(0, 0, 0, 0.3);
+    }
+
     .hero-title {
         font-size: 2.5rem;
         letter-spacing: 2px;
@@ -347,9 +360,14 @@ section {
         letter-spacing: 1.5px;
     }
 
+    .details-message {
+        width: 100%;
+    }
+
     .details-message p {
         font-size: 0.9rem;
         line-height: 1.6;
+        text-align: center;
     }
 
     .info-value {
@@ -396,7 +414,12 @@ section {
         font-size: 0.6em;
     }
 
+    .details-message {
+        width: 100%;
+    }
+
     .details-message p {
         font-size: 0.85rem;
+        text-align: center;
     }
 }
