@@ -38,6 +38,8 @@ body {
     z-index: 1;
     will-change: transform;
     backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translate(-50%, -50%);
 }
 
 .hero-overlay {
