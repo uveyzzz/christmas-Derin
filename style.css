@@ -40,6 +40,9 @@ body {
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     -webkit-transform: translate(-50%, -50%);
+    display: block;
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 .hero-overlay {
