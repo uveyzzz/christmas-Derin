@@ -6,16 +6,7 @@ const EVENT_DATE = new Date("December 26, 2025 5:00:00 PM").getTime();
 
 // Optional: Update the display date in the info box
 function updateEventDateDisplay() {
-    const eventDate = new Date(EVENT_DATE);
-    const options = { 
-        weekday: 'long', 
-        year: 'numeric', 
-        month: 'long', 
-        day: 'numeric',
-        hour: '2-digit',
-        minute: '2-digit'
-    };
-    document.getElementById('event-date').textContent = eventDate.toLocaleDateString('en-US', options);
+    document.getElementById('event-date').textContent = "December 26, 2025 From 5:00 PM Anytime";
 }
 
 // ======================================
