@@ -296,6 +296,24 @@ section {
     height: 100%;
 }
 
+/* FOOTER */
+.footer {
+    background: linear-gradient(135deg, #B22222 0%, #861D10 100%);
+    padding: 20px 40px;
+    text-align: right;
+    border-top: 1px solid rgba(255, 250, 242, 0.2);
+}
+
+.footer p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    color: #FFFAF2;
+    margin: 0;
+    opacity: 0.85;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+
 /* RESPONSIVE DESIGN */
 @media (max-width: 768px) {
     .hero-title {
@@ -345,6 +363,14 @@ section {
 
     .maps-message p {
         font-size: 1rem;
+    }
+
+    .footer {
+        padding: 15px 20px;
+    }
+
+    .footer p {
+        font-size: 0.85rem;
     }
 
     .countdown-timer {
@@ -431,6 +457,14 @@ section {
 
     .maps-message p {
         font-size: 0.9rem;
+    }
+
+    .footer {
+        padding: 12px 15px;
+    }
+
+    .footer p {
+        font-size: 0.8rem;
     }
 }
 
